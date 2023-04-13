@@ -1,12 +1,19 @@
+import useLoginModal from "@/hooks/useLoginModal";
+
 import { useRouter } from "next/router";
+import { useCallback } from "react";
 import { TfiThought } from "react-icons/tfi"
 
 const SidebarThoughtButton = () => {
     const router = useRouter();
+    const loginModal = useLoginModal();
 
+    const onClick = useCallback(() => {
+        loginModal.onOpen();
+    }, [loginModal])
 
     return (
-        <div onClick={() => router.push('/')}>
+        <div onClick={onClick}>
             <div
                 className="
             mt-6
