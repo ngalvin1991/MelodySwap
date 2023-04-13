@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
-import logo from './navbarlogo.png';
+import logo from './MelodySwap.gif';
 
 const SidebarLogo = () => {
     const router = useRouter();

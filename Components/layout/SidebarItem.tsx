@@ -31,7 +31,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
             cursor-pointer
             lg:hidden"
             >
-                <Icon size={28} color="white" />
+                <Icon size={26} color="white" />
             </div>
             <div
                 className="
